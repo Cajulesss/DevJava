@@ -1,0 +1,33 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner usuario = new Scanner(System.in);
+    //4-Escreva um algoritmo que calcule a média aritmética das 3 notas dos alunos de uma classe.O algoritmo deverá ler,além das notas, o código do aluno e deverá ser encerrado quando o código for igual a zero.
+
+    int codigo = 1;
+    while(codigo !=0){
+      codigo++;
+      
+    System.out.println("Digite a nota 1:");
+    double nota1 = usuario.nextDouble();
+    
+    System.out.println("Digite a nota 2:");
+    double nota2 = usuario.nextDouble();
+    
+    System.out.println("Digite a nota 3:");
+    double nota3 = usuario.nextDouble();
+  
+    double notas[]=new double[3];
+    notas[0]= nota1;
+    notas[1]= nota2;
+    notas[2]= nota3;
+
+    double mediaarit = (nota1+nota2+nota3)/3;
+      if(mediaarit==0){
+        break;
+      }
+
+    System.out.println("A média aritmética das notas desse aluno é:"+mediaarit);
+      }
+  }
+}
