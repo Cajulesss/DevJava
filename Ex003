@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner resp = new Scanner (System.in);
+     //As maçãs custam R$ 0,30 cada se forem compradas menos do que uma dúzia, e R$0,25 se forem compradas pelo menos doze.
+    //Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra.
+
+    System.out.println("Digite a quantidade de maçãs compradas:");
+    int quantidade = resp.nextInt();
+
+    float menos=0.30f,mais=0.25f;
+
+    if(quantidade<12){
+      System.out.println("Valor total da compra é de:"+quantidade*menos+ "R$");
+    }else{
+  System.out.println("Valor total da compra é de:"+quantidade*mais+ "R$");
+    }
+    
+    
+    
+  }
+}
