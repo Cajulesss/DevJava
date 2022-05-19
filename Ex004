@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner salario = new Scanner(System.in);
+    //3-Um programa que leia o salário bruto de um funcionário e mostre o valor líquido.
+    //Se o salário for menor que R$1.100, o desconto de INSS é 6%
+    //Até R$2.500,8%
+    //Até R$4.800, 10%
+    //Maior que R$4.800, 15%
+
+    System.out.println("Digite seu salário bruto:");
+    double salarioBruto = salario.nextDouble();
+
+    double desconto;
+    if(salarioBruto<1100){
+      desconto = 0.06;
+      System.out.println("Seu salário líquido é de:"+(salarioBruto-salarioBruto *desconto)+"R$");
+    }else if(salarioBruto>=2500){
+        desconto = 0.08;
+      System.out.println("Seu salário líquido é de:"+(salarioBruto-salarioBruto *desconto)+"R$");
+    }else if(salarioBruto>=4800){
+        desconto = 0.1;
+      System.out.println("Seu salário líquido é de:"+(salarioBruto-salarioBruto *desconto)+"R$");
+    }else{
+      System.out.println("Seu salário líquido é de:"+(salarioBruto-salarioBruto *0.15)+"R$");
+    }
+  }
+}
+      
