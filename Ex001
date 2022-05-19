@@ -1,0 +1,30 @@
+//Escreva um Programa para ler 2 valores e escrever o maior deles
+
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner resposta = new Scanner (System.in);
+    //1-(teste)Escreva um programa para ler 2 valores e escrever o maior deles 
+
+    //Perguntar ao usuário os dois números
+
+    int a1,a2;
+  
+      System.out.println("Digite o primeiro valor:");
+      a1 = resposta.nextInt();
+
+    System.out.println("Digite o segundo valor:");
+    a2 = resposta.nextInt();
+
+    if(a1>a2){
+      System.out.println("O primeiro valor digitado é maior!");
+    }else{
+      System.out.println("O segundo valor digitado é maior");
+    }
+  
+
+
+    
+    
+  }
+}
