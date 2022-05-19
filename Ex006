@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    //5-Escreva um algoritmo que leia 10 valores e encontre o maior e o menor deles.Mostre o resultado.
+    Scanner resposta = new Scanner (System.in);
+
+    double maior = 0;
+    for(int a = 0;a<10;a++){
+      System.out.println("Digite um número:");
+      double numeros = resposta.nextDouble();
+      if(numeros>maior){
+        maior=numeros;
+      }
+      System.out.println("O maior valor é:"+maior);
+    }
+  }
+}
