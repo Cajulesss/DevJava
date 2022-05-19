@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+    Scanner resposta = new Scanner (System.in);
+    //1-(teste)Escreva um programa para ler 2 valores e escrever o maior deles (Que repetirá 3 vezes)
+
+    int  repi = 0;
+      while(repi<3){
+        repi++;
+    System.out.println("Digite o primeiro valor:");
+    double valor1 = resposta.nextDouble();
+
+    System.out.println("Digite o segundo valor:");
+    double valor2 = resposta.nextDouble();
+
+        if(valor1>valor2){
+          System.out.println("O maior valor digitado é:" +valor1);
+        }else{
+          System.out.println("O maior valor digitado é:" +valor2);
+        }
+      
+      }
+    }
+  }
